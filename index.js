@@ -24,8 +24,8 @@ $(document).keypress(function() {
 $(".btn").click(function() {
   var chosenColor = $(this).attr('id');
   userClickedPattern.push(chosenColor);
-  animatePress(chosenColor);
-  playSound(chosenColor);
+    playSound(chosenColor);
+    animatePress(chosenColor);
   if (gamePattern.length === userClickedPattern.length) {
     checkAnswer();
   } else {
