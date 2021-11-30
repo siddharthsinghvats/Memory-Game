@@ -74,7 +74,7 @@ function checkAnswer() {
     }
   }
   if (correct) {
-    setTimeout(nextSequence(),700);
+    setTimeout(nextSequence(),1000);
   } else {
     playSound("wrong");
     $("body").addClass("game-over");
