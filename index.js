@@ -18,7 +18,7 @@ $(document).keypress(function() {
   if (firstTime) {
     firstTime = false;
     setTimeout(nextSequence(),
-      300);
+      500);
   }
 });
 $(".btn").click(function() {
@@ -74,7 +74,7 @@ function checkAnswer() {
     }
   }
   if (correct) {
-    nextSequence();
+    setTimeout(nextSequence(),700);
   } else {
     playSound("wrong");
     $("body").addClass("game-over");
